@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4em;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: lightgrey;
+}
+
+body .container {
+  height: 100vh;
+}
+
+body .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1440px;
+  height: 250px;
+  background: url(/images/pattern-bg.png) no-repeat;
+}
+
+body .container .content h1 {
+  color: #fff;
+}
+
+body .container .content .form {
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+body .container .content .form input[type=text] {
+  position: relative;
+  margin: 0;
+  font-size: 18px;
+  width: 90%;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+body .container .content .form input[type=text]:hover {
+  cursor: pointer;
+}
+
+body .container .content .form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #000;
+  padding: 18px 22px;
+  border-radius: 0 15px 15px 0;
+  -webkit-transition: -webkit-transform .6;
+  transition: -webkit-transform .6;
+  transition: transform .6;
+  transition: transform .6, -webkit-transform .6;
+}
+
+body .container .content .form button:hover {
+  cursor: pointer;
+  background: #2b2b2b;
+}
+
+body .container .map,
+body .container #mapid {
+  height: calc(100vh - 250px);
+}
+/*# sourceMappingURL=style.css.map */

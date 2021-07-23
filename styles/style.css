@@ -23,6 +23,7 @@ body {
 
 body .container {
   height: 100vh;
+  width: 100vw;
 }
 
 body .container .content {
@@ -39,9 +40,9 @@ body .container .content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1440px;
-  height: 250px;
-  background: url(/images/pattern-bg.png) no-repeat;
+  height: 33vh;
+  background: url(/images/pattern-bg.png);
+  background-size: cover;
 }
 
 body .container .content h1 {
@@ -72,7 +73,7 @@ body .container .content .form button {
   right: 0;
   top: 0;
   background: #000;
-  padding: 18px 22px;
+  padding: 18.5px 22px;
   border-radius: 0 15px 15px 0;
   -webkit-transition: -webkit-transform .6;
   transition: -webkit-transform .6;
@@ -87,6 +88,6 @@ body .container .content .form button:hover {
 
 body .container .map,
 body .container #mapid {
-  height: calc(100vh - 250px);
+  height: 67vh;
 }
 /*# sourceMappingURL=style.css.map */

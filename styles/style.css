@@ -64,10 +64,6 @@ body .container .content .form input[type=text] {
   border-radius: 15px;
 }
 
-body .container .content .form input[type=text]:hover {
-  cursor: pointer;
-}
-
 body .container .content .form button {
   position: absolute;
   right: 0;

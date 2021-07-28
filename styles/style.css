@@ -37,21 +37,21 @@ body .container .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 33vh;
+  height: 25vh;
   background: url(/images/pattern-bg.png);
   background-size: cover;
 }
 
 body .container .content h1 {
   color: #fff;
+  margin-top: 1.4vw;
 }
 
 body .container .content .form {
   width: 40vw;
   text-align: center;
   position: relative;
+  margin-top: 1.4vw;
 }
 
 body .container .content .form input[type=text] {
@@ -92,10 +92,11 @@ body .container .content .info {
   padding: 25px;
   background-color: #fff;
   border-radius: 20px;
+  margin-top: 1.4vw;
 }
 
 body .container .content .info .info-element {
-  border-right: 1px solid #969696;
+  border-right: 1.7px solid #969696;
   padding: 0 25px;
   width: 25%;
 }
@@ -111,12 +112,13 @@ body .container .content .info .info-element .element-title {
 }
 
 body .container .content .info .info-element .element-data {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 body .container .map,
 body .container #mapid {
-  height: 67vh;
+  height: 75vh;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

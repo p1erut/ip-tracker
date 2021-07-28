@@ -25,19 +25,21 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-around;
-            height: 33vh;
+            //justify-content: space-around;
+            height: 25vh;
             background: url(/images/pattern-bg.png);
             background-size: cover;
 
             h1 {
                 color: #fff;
+                margin-top: 1.4vw;
             }
 
             .form {
                 width: 40vw;
                 text-align: center;
                 position: relative;
+                margin-top: 1.4vw;
 
                 input[type=text] {
                     position: relative;
@@ -71,9 +73,10 @@ body {
                 padding: 25px;
                 background-color: #fff;
                 border-radius: 20px;
+                margin-top: 1.4vw;
 
                 .info-element {
-                    border-right: 1px solid hsl(0, 0%, 59%);
+                    border-right: 1.7px solid hsl(0, 0%, 59%);
                     padding: 0 25px;
                     width: 25%;
 
@@ -88,7 +91,7 @@ body {
                     }
 
                     .element-data {
-                        font-size: 1.2rem;
+                        font-size: 1.5rem;
                         font-weight: 500;
                     }
                 }
@@ -97,7 +100,8 @@ body {
 
         .map,
         #mapid {
-            height: 67vh;
+            height: 75vh;
+            z-index: -1;
         }
     }
 }

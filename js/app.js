@@ -67,8 +67,6 @@ $(function () {
         }).addTo(mymap);
     };
     document.querySelector('button').addEventListener('click', () => getIp());
-
-    console.log("Here i am");
 });
 
 /*

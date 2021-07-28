@@ -49,7 +49,7 @@ $(function () {
         document.querySelector('.map').innerHTML = `<div id="mapid"></div>`;
         let mymap = L.map('mapid').setView([x, y], 13);
         const pin = L.icon({
-            iconUrl: '/images/icon-location.svg',
+            iconUrl: '../images/icon-location.svg',
             iconSize: [46, 56],
             iconAnchor: [23, 55]
         });

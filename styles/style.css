@@ -38,7 +38,7 @@ body .container .content {
       -ms-flex-align: center;
           align-items: center;
   height: 25vh;
-  background: url(/images/pattern-bg.png);
+  background: url(../images/pattern-bg.png);
   background-size: cover;
 }
 

@@ -20,15 +20,16 @@ body {
     .container {
         height: 100vh;
         width: 100vw;
+        z-index: 0;
 
         .content {
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 25vh;
-            //background: url('../images/pattern-bg.png');
             background: url(https://p1erut.github.io/ip-tracker/images/pattern-bg.png);
             background-size: cover;
+            z-index: 1;
 
             h1 {
                 color: #fff;
@@ -74,6 +75,7 @@ body {
                 background-color: #fff;
                 border-radius: 20px;
                 margin-top: 1.4vw;
+                z-index: 2;
 
                 .info-element {
                     border-right: 1.7px solid hsl(0, 0%, 59%);
@@ -101,7 +103,27 @@ body {
         .map,
         #mapid {
             height: 75vh;
-            z-index: -1;
+            z-index: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        .container {
+            .content {
+                .info {
+                    flex-direction: column;
+                    width: 60vw;
+
+                    .info-element {
+                        width: 100%;
+                        border: none;
+                        text-align: center;
+                        padding: 10px 0;
+                    }
+                }
+            }
         }
     }
 }

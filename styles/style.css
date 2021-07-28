@@ -24,6 +24,7 @@ body {
 body .container {
   height: 100vh;
   width: 100vw;
+  z-index: 0;
 }
 
 body .container .content {
@@ -40,6 +41,7 @@ body .container .content {
   height: 25vh;
   background: url(https://p1erut.github.io/ip-tracker/images/pattern-bg.png);
   background-size: cover;
+  z-index: 1;
 }
 
 body .container .content h1 {
@@ -93,6 +95,7 @@ body .container .content .info {
   background-color: #fff;
   border-radius: 20px;
   margin-top: 1.4vw;
+  z-index: 2;
 }
 
 body .container .content .info .info-element {
@@ -119,6 +122,22 @@ body .container .content .info .info-element .element-data {
 body .container .map,
 body .container #mapid {
   height: 75vh;
-  z-index: -1;
+  z-index: 0;
+}
+
+@media screen and (max-width: 900px) {
+  body .container .content .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60vw;
+  }
+  body .container .content .info .info-element {
+    width: 100%;
+    border: none;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
